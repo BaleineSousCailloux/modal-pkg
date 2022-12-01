@@ -1,6 +1,7 @@
 import React from 'react'
 import './styles/Modal.css'
 import { useState, useEffect } from 'react'
+import PropTypes from 'prop-types'
 
 const Modal = ({ message, isShowing, onClose }) => {
   const [isVisible, setIsVisible] = useState(false)
@@ -24,6 +25,12 @@ const Modal = ({ message, isShowing, onClose }) => {
       )}
     </div>
   )
+}
+
+Modal.propTypes = {
+  message: PropTypes.string.isRequired,
+  isShowing: PropTypes.bool.isRequired,
+  onClose: PropTypes.func.isRequired,
 }
 
 export default Modal

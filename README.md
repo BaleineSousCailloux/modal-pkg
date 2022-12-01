@@ -21,12 +21,10 @@ const closeModal = () => {
     setModalIsShowing(false)
 }
 
-### Use props of the Modal component :
-<Modal
-    message="your message"
-    onClose={closeModal}
-    isShowing={modalIsShowing}
-/>
+### Use the props of the Modal component :
+message="your message"
+onClose={closeModal}
+isShowing={modalIsShowing}
 
 ### Define modalIsShowing at true to display the modal (onClick for example):
 setModalIsShowing(true)
